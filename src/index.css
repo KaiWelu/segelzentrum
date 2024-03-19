@@ -1,4 +1,6 @@
 /* This is the global css file */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,7 @@
     @apply box-border list-none p-0 m-0 scroll-smooth;
   }
 
-  /* body {
-    @apply bg-dark-1 text-white min-h-screen font-inter;
-  } */
+  body {
+    @apply text-primary-1 min-h-screen font-commissioner;
+  }
 }

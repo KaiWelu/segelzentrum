@@ -11,6 +11,9 @@ export default {
         // this is an example
         "light-4": "#5C5C7B",
       },
+      fontFamily: {
+        commissioner: ["Commissioner", "sans-serif"],
+      },
     },
   },
   plugins: [],
