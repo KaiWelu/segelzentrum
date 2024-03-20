@@ -12,6 +12,7 @@ import Umgebung from "./_root/pages/Umgebung";
 import Buchung from "./_root/pages/Buchung";
 import Verein from "./_root/pages/Verein";
 import Partner from "./_root/pages/Partner";
+import NotFound from "./_root/pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,8 @@ const router = createBrowserRouter(
       <Route path="buchung" element={<Buchung />} />
       <Route path="verein" element={<Verein />} />
       <Route path="partner" element={<Partner />} />
+      {/* this is the catch all 404 page */}
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );

@@ -14,3 +14,9 @@
     @apply text-primary-1 min-h-screen font-commissioner;
   }
 }
+
+@layer utilities {
+  .navlink {
+    @apply h-full py-6 px-3 text-white font-bold text-base hover:bg-white hover:text-primary-2;
+  }
+}
