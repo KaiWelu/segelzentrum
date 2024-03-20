@@ -1,17 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
     <div>
       <div className="flex flex-row justify-center bg-white ">
         <div className="w-full md:max-w-7xl py-4 flex flex-row gap-4  border-primary-2">
-          <img
-            src="/public/assets/logo/logo_transparent_bg.png"
-            alt="logo"
-            width={150}
-            height={150}
-            className="p-1"
-          />
+          <Link to="/">
+            <img
+              src="/public/assets/logo/logo_transparent_bg.png"
+              alt="logo"
+              width={150}
+              height={150}
+              className="p-1"
+            />
+          </Link>
           <div className="flex flex-col gap-2 ">
             <p className="text-5xl text-primary-1 font-light">CVJM Ratzeburg</p>
             <p className="text-4xl  text-secondary-1  font-light">
