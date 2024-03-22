@@ -4,7 +4,7 @@ const TopBar = () => {
   return (
     <div>
       <div className="flex flex-row justify-center bg-white ">
-        <div className="w-full md:max-w-7xl py-4 flex flex-row gap-4  border-primary-2">
+        <div className="w-full py-4 flex flex-row gap-4">
           <Link to="/">
             <img
               src="/public/assets/logo/logo_transparent_bg.png"
@@ -16,14 +16,14 @@ const TopBar = () => {
           </Link>
           <div className="flex flex-col gap-2 ">
             <p className="text-5xl text-primary-1 font-light">CVJM Ratzeburg</p>
-            <p className="text-4xl  text-secondary-1  font-light">
+            <p className="text-4xl  text-secondary-1 font-light">
               Freizeit- und Segelzentrum
             </p>
           </div>
         </div>
       </div>
-      <nav className="bg-white flex flex-row justify-center ">
-        <div className="w-full md:max-w-7xl flex flex-row gap-6 justify-start border-b-2 border-t-2 border-primary-2">
+      <nav className="flex flex-row justify-center">
+        <div className="w-full flex flex-row gap-6 justify-start">
           <NavLink to="haus" className="navlink">
             Haus
           </NavLink>
