@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div className="navbar bg-primary-2 rounded-md">
+    <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300">
       <div className="hidden lg:flex flex-row gap-1">
         <Link to="/">
           <img
@@ -13,10 +13,33 @@ const TopBar = () => {
             className="p-1"
           />
         </Link>
-        <div className="text-white  font-semibold">
+        <div className="text-white font-semibold">
           <p>CVJM Ratzeburg</p>
           <p className="font-light">Freizeit- und Segelzentrum</p>
         </div>
+      </div>
+      <div className="navbar-end hidden lg:flex text-white">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>Item 1</a>
+          </li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul className="p-2 z-100 bg-black">
+                <li>
+                  <a>Submenu 1</a>
+                </li>
+                <li>
+                  <a>Submenu 2</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a>Item 3</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

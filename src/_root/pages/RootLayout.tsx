@@ -5,7 +5,7 @@ const RootLayout = () => {
   return (
     <div className="w-full">
       <div className="mx-auto max-w-screen-xl p-4">
-        <header>
+        <header className="sticky top-0">
           <TopBar />
         </header>
         <main>
