@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300 w-full">
+    <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300">
       {/* === Mobile Navbar === */}
       <div className="navbar-start lg:hidden text-white">
         <div className="flex flex-row gap-1">
@@ -44,10 +44,10 @@ const TopBar = () => {
             className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-md w-52 mt-4"
           >
             <li>
-              <a>Item 1</a>
+              <a>Sache 1</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Sache 2</a>
             </li>
           </div>
         </div>
