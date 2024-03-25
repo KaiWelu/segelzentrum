@@ -1,9 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
     <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300">
-      <div className="hidden lg:flex flex-row gap-1">
+      <div className="hidden xl:flex flex-row gap-1">
         <Link to="/">
           <img
             src="/public/assets/logo/logo_white.png"
@@ -13,77 +13,245 @@ const TopBar = () => {
             className="p-1"
           />
         </Link>
-        <div className="text-white font-semibold">
+        <div className="text-white font-semibold hidden xl:inline">
           <p>CVJM Ratzeburg</p>
           <p className="font-light">Freizeit- und Segelzentrum</p>
         </div>
       </div>
       <div className="navbar-end hidden lg:flex text-white">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 z-100 bg-black">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <div className="dropdown dropdown-hover">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn rounded-none
+            border-0           
+            font-light
+            text-lg
+            text-white
+            bg-primary-2
+            hover:!bg-primary-2             
+            active:!bg-primary-2 
+            active:!text-white"
+          >
+            Haus
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+          >
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 1
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 2
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 3
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="dropdown dropdown-hover">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn rounded-none
+            border-0           
+            font-light
+            text-lg
+            text-white
+            bg-primary-2
+            hover:!bg-primary-2             
+            active:!bg-primary-2 
+            active:!text-white"
+          >
+            Wassersport
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+          >
+            <li>
+              <Link
+                to="wassersport"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 1
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="wassersport"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 2
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="wassersport"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 3
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="dropdown dropdown-hover">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn rounded-none
+            border-0           
+            font-light
+            text-lg
+            text-white
+            bg-primary-2
+            hover:!bg-primary-2             
+            active:!bg-primary-2 
+            active:!text-white"
+          >
+            Umgebung
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+          >
+            <li>
+              <Link
+                to="umgebung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 1
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="umgebung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 2
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="umgebung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 3
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="dropdown dropdown-hover">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn rounded-none
+            border-0           
+            font-light
+            text-lg
+            text-white
+            bg-primary-2
+            hover:!bg-primary-2             
+            active:!bg-primary-2 
+            active:!text-white"
+          >
+            Buchen
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+          >
+            <li>
+              <Link
+                to="buchung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 1
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="buchung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 2
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="buchung"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 3
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="dropdown dropdown-hover">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn rounded-none
+            border-0           
+            font-light
+            text-lg
+            text-white
+            bg-primary-2
+            hover:!bg-primary-2             
+            active:!bg-primary-2 
+            active:!text-white"
+          >
+            Verein
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+          >
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 1
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 2
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="haus"
+                className="hover:!bg-white hover:!text-primary-2 hover:!font-semibold focus:!bg-white focus:!text-primary-2 focus:!font-semibold"
+              >
+                Kategorie nummer 3
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
-  /* <div className="flex flex-row justify-center bg-white ">
-        <div className="w-full py-4 flex flex-row gap-4">
-          <Link to="/">
-            <img
-              src="/public/assets/logo/logo_transparent_bg.png"
-              alt="logo"
-              width={150}
-              height={150}
-              className="p-1"
-            />
-          </Link>
-          <div className="flex flex-col gap-2 ">
-            <p className="text-5xl text-primary-1 font-light">CVJM Ratzeburg</p>
-            <p className="text-4xl  text-secondary-1 font-light">
-              Freizeit- und Segelzentrum
-            </p>
-          </div>
-        </div>
-      </div>
-      <nav className="flex flex-row justify-center">
-        <div className="w-full flex flex-row gap-6 justify-start">
-          <NavLink to="haus" className="navlink">
-            Haus
-          </NavLink>
-          <NavLink to="wassersport" className="navlink">
-            Wassersport
-          </NavLink>
-          <NavLink to="umgebung" className="navlink">
-            Umgebung
-          </NavLink>
-          <NavLink to="buchung" className="navlink">
-            Buchen
-          </NavLink>
-          <NavLink to="verein" className="navlink">
-            Förderverein
-          </NavLink>
-          <NavLink to="partner" className="navlink">
-            Partner
-          </NavLink>
-        </div>
-      </nav> */
 };
 
 export default TopBar;
