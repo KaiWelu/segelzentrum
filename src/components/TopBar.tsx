@@ -3,22 +3,24 @@ import { Link } from "react-router-dom";
 const TopBar = () => {
   return (
     <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300">
-      <div className="hidden xl:flex flex-row gap-1">
-        <Link to="/">
-          <img
-            src="/public/assets/logo/logo_white.png"
-            alt="logo"
-            width={60}
-            height={60}
-            className="p-1"
-          />
-        </Link>
-        <div className="text-white font-semibold hidden xl:inline">
-          <p>CVJM Ratzeburg</p>
-          <p className="font-light">Freizeit- und Segelzentrum</p>
+      <div className="navbar-start">
+        <div className="hidden lg:flex flex-row gap-2">
+          <Link to="/">
+            <img
+              src="/public/assets/logo/logo_white.png"
+              alt="logo"
+              width={70}
+              height={70}
+              className="p-1"
+            />
+          </Link>
+          <div className="text-white font-semibold hidden xl:inline">
+            <p>CVJM Ratzeburg</p>
+            <p className="font-light">Freizeit- und Segelzentrum</p>
+          </div>
         </div>
       </div>
-      <div className="navbar-end hidden lg:flex text-white">
+      <div className="navbar-center hidden lg:flex text-white">
         <div className="dropdown dropdown-hover">
           <div
             tabIndex={0}
@@ -249,6 +251,24 @@ const TopBar = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="navbar-end hidden lg:flex">
+        <a href="https://www.facebook.com/cvjm.ratzeburg" target="_blank">
+          <img
+            src="/public/assets/icons/icons8-facebook-64.png"
+            alt="facebook"
+            height={35}
+            width={35}
+          />
+        </a>
+        <a href="https://www.instagram.com/cvjmratzeburg" target="_blank">
+          <img
+            src="/public/assets/icons/icons8-instagram-64.png"
+            alt="instagram"
+            height={35}
+            width={35}
+          />
+        </a>
       </div>
     </div>
   );

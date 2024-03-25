@@ -11,8 +11,9 @@ const RootLayout = () => {
         <main>
           <Outlet />
         </main>
-
-        <footer>Her will be dragons</footer>
+        <footer>
+          <p>Icons by Icon 8</p>
+        </footer>
       </div>
     </div>
   );
