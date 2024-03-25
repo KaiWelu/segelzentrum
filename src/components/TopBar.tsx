@@ -2,9 +2,59 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300">
-      <div className="navbar-start">
-        <div className="hidden lg:flex flex-row gap-2">
+    <div className="navbar bg-primary-2 rounded-md shadow-md shadow-slate-300 w-full">
+      {/* === Mobile Navbar === */}
+      <div className="navbar-start lg:hidden text-white">
+        <div className="flex flex-row gap-1">
+          <Link to="/">
+            <img
+              src="/public/assets/logo/logo_white.png"
+              alt="logo"
+              width={55}
+              height={55}
+              className="p-1"
+            />
+          </Link>
+          <div className="text-white font-light text-sm">
+            <p>CVJM</p>
+            <p>Ratzeburg</p>
+          </div>
+        </div>
+      </div>
+      <div className="navbar-end lg:hidden">
+        <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className="m-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-8 h-8 stroke-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
+          </div>
+          <div
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-md w-52 mt-4"
+          >
+            <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Item 2</a>
+            </li>
+          </div>
+        </div>
+      </div>
+      {/* === Desktop Navbar === */}
+      <div className="navbar-start hidden lg:flex">
+        <div className="flex flex-row gap-2">
           <Link to="/">
             <img
               src="/public/assets/logo/logo_white.png"
