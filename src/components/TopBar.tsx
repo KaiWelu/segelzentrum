@@ -2,8 +2,25 @@ import { Link, NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div>
-      <div className="flex flex-row justify-center bg-white ">
+    <div className="navbar bg-primary-2 rounded-md">
+      <div className="hidden lg:flex flex-row gap-1">
+        <Link to="/">
+          <img
+            src="/public/assets/logo/logo_white.png"
+            alt="logo"
+            width={60}
+            height={60}
+            className="p-1"
+          />
+        </Link>
+        <div className="text-white  font-semibold">
+          <p>CVJM Ratzeburg</p>
+          <p className="font-light">Freizeit- und Segelzentrum</p>
+        </div>
+      </div>
+    </div>
+  );
+  /* <div className="flex flex-row justify-center bg-white ">
         <div className="w-full py-4 flex flex-row gap-4">
           <Link to="/">
             <img
@@ -43,9 +60,7 @@ const TopBar = () => {
             Partner
           </NavLink>
         </div>
-      </nav>
-    </div>
-  );
+      </nav> */
 };
 
 export default TopBar;
