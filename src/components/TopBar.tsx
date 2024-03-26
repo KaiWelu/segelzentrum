@@ -24,14 +24,14 @@ const TopBar = () => {
                 height={120}
               />
             </Link>
-            <div>
+            <div className="hidden xl:flex flex-col">
               <p className="text-2xl font-light">CVJM Ratzeburg</p>
               <p className="font-light">Freizeit- und Segelzentrum</p>
             </div>
           </div>
         </div>
         <div className="navbar-center">
-          <div className="flex flex-row gap-2">
+          <div className="flex-row gap-4 hidden lg:flex">
             <button
               className="nav-button_topbar"
               id="haus"
@@ -39,21 +39,71 @@ const TopBar = () => {
             >
               Haus
             </button>
+            <button
+              className="nav-button_topbar"
+              id="wassersport"
+              onClick={subMenuHandler}
+            >
+              Wassersport
+            </button>
+            <button
+              className="nav-button_topbar"
+              id="umgebung"
+              onClick={subMenuHandler}
+            >
+              Umgebung
+            </button>
+            <button
+              className="nav-button_topbar"
+              id="Buchen"
+              onClick={subMenuHandler}
+            >
+              Buchen
+            </button>
+            <button
+              className="nav-button_topbar"
+              id="verein"
+              onClick={subMenuHandler}
+            >
+              Förderverein
+            </button>
           </div>
         </div>
         <div className="navbar-end">
           <p>here be dragons</p>
         </div>
       </nav>
-      {!isHausMenuShown && (
-        <nav className="bg-primary-2 text-white h-12 absolute -z-10 top-16 w-full">
-          Hallo
-        </nav>
-      )}
       {isHausMenuShown && (
-        <nav className="bg-primary-2 text-white h-16 absolute -z-10 top-30 w-full shadow-sm shadow-slate-300 ">
-          Hallo
-        </nav>
+        <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden lg:flex">
+          <nav className="navbar mx-auto max-w-screen-lg">
+            <div className="w-full flex flex-row gap-4">
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Über uns</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Ausstattung</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Tagungen</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Gallerie</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Webcam</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Kontakt</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Anfahrt</button>
+              </Link>
+              <Link to="wassersport">
+                <button className="nav-button_submenu">Stellenangebote</button>
+              </Link>
+            </div>
+          </nav>
+        </div>
       )}
     </div>
   );
