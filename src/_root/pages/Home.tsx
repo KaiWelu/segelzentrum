@@ -33,10 +33,19 @@ const Home = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src="/public/assets/images/hero-carousel/cvjm_impression_2.jpg"
-            alt="sailing"
-          />
+          <div>
+            <img
+              src="/public/assets/images/hero-carousel/cvjm_impression_2.jpg"
+              alt="sailing"
+            />
+
+            <div className="w-full h-16 bg-primary-2 triangle-overlay absolute bottom-28"></div>
+            <div className="w-full h-32 bg-primary-2 flex justify-center">
+              <p className="text-white inline-block align-middle">
+                Ratzeburg ist einfach schön!
+              </p>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
