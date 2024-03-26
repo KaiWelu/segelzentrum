@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 const TopBar = () => {
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
 
-  function isHausMenuShownHandler() {
-    setIsHausMenuShown(!isHausMenuShown);
+  function subMenuHandler(event: any) {
+    if (event.target.id === "haus") {
+      setIsHausMenuShown(!isHausMenuShown);
+    }
   }
 
   return (
@@ -32,7 +34,8 @@ const TopBar = () => {
           <div className="flex flex-row gap-2">
             <button
               className="nav-button_topbar"
-              onClick={isHausMenuShownHandler}
+              id="haus"
+              onClick={subMenuHandler}
             >
               Haus
             </button>
