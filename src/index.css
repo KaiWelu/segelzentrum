@@ -29,7 +29,7 @@
 .heroSwiper {
   /* this is for the bullets */
   --swiper-pagination-color: white;
-  --swiper-pagination-bottom: 20px;
+  --swiper-pagination-bottom: 10px;
   --swiper-pagination-bullet-size: 12px;
   /* this is for the side navigation */
   --swiper-navigation-color: white;
