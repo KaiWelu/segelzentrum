@@ -89,7 +89,7 @@ const TopBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
+            className="dropdown-content z-[5] menu p-2 shadow bg-base-100 rounded-sm w-52 text-primary-2"
           >
             <li>
               <Link
