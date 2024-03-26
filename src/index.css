@@ -21,6 +21,17 @@
   }
 }
 
+/* styles for the home page hero carousel */
 .triangle-overlay {
   clip-path: polygon(0 75%, 100% 5%, 100% 100%, 0% 100%);
+}
+
+.heroSwiper {
+  /* this is for the bullets */
+  --swiper-pagination-color: white;
+  --swiper-pagination-bottom: 20px;
+  --swiper-pagination-bullet-size: 12px;
+  /* this is for the side navigation */
+  --swiper-navigation-color: white;
+  --swiper-navigation-top-offset: 50%;
 }
