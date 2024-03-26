@@ -69,8 +69,25 @@ const TopBar = () => {
             </button>
           </div>
         </div>
-        <div className="navbar-end">
-          <p>here be dragons</p>
+        <div className="navbar-end hidden lg:flex">
+          <div className="flex flex-row justify-end w-full gap-3 mr-4">
+            <a href="https://www.instagram.com/cvjmratzeburg" target="_blank">
+              <img
+                src="/public/assets/icons/icons8-instagram-red.svg"
+                alt="instagram"
+                height={35}
+                width={35}
+              />
+            </a>
+            <a href="https://www.facebook.com/cvjm.ratzeburg" target="_blank">
+              <img
+                src="/public/assets/icons/icons8-facebook-red.svg"
+                alt="instagram"
+                height={35}
+                width={35}
+              />
+            </a>
+          </div>
         </div>
       </nav>
       {isHausMenuShown && (
