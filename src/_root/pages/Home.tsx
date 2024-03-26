@@ -11,7 +11,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Home = () => {
   return (
-    <div className="p-1 mt-6">
+    <div className="p-1 mt-6 mx-auto max-w-screen-xl">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
