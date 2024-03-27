@@ -30,7 +30,7 @@ const TopBar = () => {
               />
             </Link>
             <div className="flex flex-col">
-              <p className="text-xs font-light">CVJM Ratzeburg</p>
+              <p className="text-xs font-semibold">CVJM Ratzeburg</p>
               <p className="text-xs font-light">Freizeit- und Segelzentrum</p>
             </div>
           </div>
