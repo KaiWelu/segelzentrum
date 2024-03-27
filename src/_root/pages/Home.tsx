@@ -11,7 +11,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Home = () => {
   return (
-    <div className="p-1 mt-6">
+    <div className="p-1 mt-2 mx-auto max-w-screen-xl">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -34,8 +34,8 @@ const Home = () => {
           <div className="w-full h-16 bg-primary-2 triangle-overlay absolute bottom-28"></div>
           <div className="w-full h-32 bg-primary-2 flex justify-center">
             <p className="text-white md:text-2xl lg:text-3xl font-light mt-8 px-4">
-              Ratzeburg ist einfach schön! Wie lange kann ich hier text
-              reinpacken?
+              Ratzeburg ist einfach schön! Komm einfach zum Segeln her du
+              Lappen!
             </p>
           </div>
         </SwiperSlide>
@@ -46,9 +46,8 @@ const Home = () => {
           />
           <div className="w-full h-16 bg-primary-2 triangle-overlay absolute bottom-28"></div>
           <div className="w-full h-32 bg-primary-2 flex justify-center">
-            <p className="text-white md:text-2xl lg:text-3xl font-light mt-8 px-4">
-              Ratzeburg ist einfach schön! Wie lange kann ich hier text
-              reinpacken?
+            <p className="text-white md:text-2xl lg:text-3xl  font-extralight mt-8 px-4">
+              Ratzeburg ist schön! Komm einfach zum Segeln her du Lappen!
             </p>
           </div>
         </SwiperSlide>

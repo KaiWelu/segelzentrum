@@ -1,6 +1,6 @@
 const Haus = () => {
   return (
-    <div>
+    <div className="mx-auto max-w-screen-xl">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quas
         placeat sint explicabo fugiat aliquid nobis iusto sunt laudantium non
