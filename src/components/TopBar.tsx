@@ -236,7 +236,7 @@ const TopBar = () => {
               <Link to="haus#ausstattung">
                 <button className="nav-button_submenu">Ausstattung</button>
               </Link>
-              <Link to="wassersport">
+              <Link to="haus#tagen">
                 <button className="nav-button_submenu">Tagungen</button>
               </Link>
               <Link to="wassersport">
