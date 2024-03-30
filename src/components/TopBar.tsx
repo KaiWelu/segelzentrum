@@ -230,7 +230,7 @@ const TopBar = () => {
         <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden md:flex">
           <nav className="navbar mx-auto max-w-screen-lg">
             <div className="w-full flex flex-row gap-4">
-              <Link to="wassersport">
+              <Link to="haus">
                 <button className="nav-button_submenu">Über uns</button>
               </Link>
               <Link to="wassersport">
