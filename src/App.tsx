@@ -15,6 +15,7 @@ import NotFound from "./_root/pages/NotFound";
 import UberUns from "./_root/pages/haus/UberUns";
 import Ausstattung from "./_root/pages/haus/Ausstattung";
 import Tagungen from "./_root/pages/haus/Tagungen";
+import Anfahrt from "./_root/pages/haus/Anfahrt";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path="haus/uberuns" element={<UberUns />} />
         <Route path="haus/ausstattung" element={<Ausstattung />} />
         <Route path="haus/tagungen" element={<Tagungen />} />
+        <Route path="haus/anfahrt" element={<Anfahrt />} />
 
         <Route path="wassersport" element={<Wassersport />} />
         <Route path="umgebung" element={<Umgebung />} />
