@@ -1,6 +1,7 @@
 import {
   Route,
   RouterProvider,
+  Routes,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
@@ -13,17 +14,23 @@ import Buchung from "./_root/pages/Buchung";
 import Verein from "./_root/pages/Verein";
 import Partner from "./_root/pages/Partner";
 import NotFound from "./_root/pages/NotFound";
+import UberUns from "./_root/pages/haus/UberUns";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="haus" element={<Haus />} />
-      <Route path="wassersport" element={<Wassersport />} />
-      <Route path="umgebung" element={<Umgebung />} />
-      <Route path="buchung" element={<Buchung />} />
-      <Route path="verein" element={<Verein />} />
-      <Route path="partner" element={<Partner />} />
+    <Route>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        {/* "haus" menu routes */}
+        <Route path="haus/uberuns" element={<UberUns />} />
+
+        <Route path="wassersport" element={<Wassersport />} />
+        <Route path="umgebung" element={<Umgebung />} />
+        <Route path="buchung" element={<Buchung />} />
+        <Route path="verein" element={<Verein />} />
+        <Route path="partner" element={<Partner />} />
+      </Route>
+
       {/* this is the catch all 404 page */}
       <Route path="*" element={<NotFound />} />
     </Route>
