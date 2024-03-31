@@ -1,73 +1,30 @@
 const Haus = () => {
   return (
-    <div className="mx-auto max-w-screen-xl mt-5 p-4">
-      {/* <Outlet /> */}
-      <section id="ausstattung">
-        <h1 className="font-semibold text-2xl mb-2 mt-4">
-          Ausstattung des Hauses
-        </h1>
-        <p className="py-2">
-          Unser Haus verfügt über vier Schlaftrakte mit insgesamt 96 Betten
-          verteilt auf 30 Zimmer. Eine zusätzliche Aufbettung ist möglich. Die
-          sanitären Anlagen befinden sich jeweils auf den Fluren, Waschbecken
-          auf den Zimmern. Aufgrund von Sanierungsmaßnahmen stehen aktuell nur
-          71 Betten verteilt auf 15 Zimmer zur Verfügung.
-        </p>
-        <p className="py-2">
-          Es stehen Ihnen folgende Seminar- und Gruppenräume zur Verfügung: 1
-          großer Tagungsraum für ca. 80 Personen, 2 mittelgroße Seminar/
-          Gruppenräume für ca. 30–40 Personen, 2 kleinere Aufenthaltsräume für
-          ca. 15-20 Personen, 1 hausinterne Hafenkneipe für ca. 35 Personen, 2
-          Speisesäle für je 100 Personen und 30 Personen, 1 Teeküche.
-        </p>
-        <p className="py-2">
-          Die Mahlzeiten nehmen Sie mit Blick auf den Ratzeburger See ein.
-          Unsere Küche stellt sich auf Ihre Wünsche ein und kann Ihnen, bei
-          einer rechtzeitigen Anmeldung, außer der „normalen“ Verpflegung auch
-          eine vegetarische oder auch Vollwertkost anbieten.
-        </p>
-        <p className="py-2">
-          In den Sommermonaten bietet sich die besondere Gelegenheit, bei einem
-          der unbeschreiblichen Sonnenuntergänge in unserem Hafen zu grillen.
-          Genießen Sie zudem die Ruhe am Abend in netter Runde in der
-          Hafenkneipe, draußen am See oder auf dem Bootssteg.
-        </p>
-        <p className="py-2">
-          Unser Haus verfügt außerdem über eine Wohnung mit wunderschönem
-          Seeblick. Die Wohnung hat vier Schlafräume mit max. 12 Betten, eine
-          Küche, ein Bad mit Dusche und WC, ein Bad mit Dusche, Badewanne und WC
-          sowie ein Gäste-WC. Bei einer Buchung besteht auch die Möglichkeit der
-          Selbstversorgung. Ein großer heller Aufenthaltsraum mit Fernseher,
-          eine große Seeterrasse mit eigenem Aufgang und ein direkter Zugang zum
-          See sorgen für eine einmalige Lage und Atmosphäre.
-        </p>
-      </section>
-      <section id="tagen">
-        <h1 className="font-semibold text-2xl mb-2 mt-4">Tagen und Erholen</h1>
-        <p className="py-2">
-          Neben den Wassersportaktivitäten bietet sich unser Haus - vor allem
-          auch in den Wintermonaten - besonders für Tagungs- und Seminargruppen,
-          Chorfreizeiten und Jugendfreizeiten an.
-        </p>
-        <p className="py-2">
-          In unserem Haus besteht ein umfassendes Raumangebot. So haben unsere
-          Gäste die Möglichkeit, verschieden große Seminarräume (25–100 qm),
-          Aufenthaltsräume und eine hausinterne Hafenkneipe, die direkt am See
-          liegt, zu nutzen.
-        </p>
-        <p className="py-2">
-          Zudem stellen wir Ihnen gerne eine umfassende mediale Ausstattung
-          (Beamer, TV, DVD, Video, Audiogeräte, Leinwände, Pinnwände und
-          Flipcharts) zur Verfügung, ebenso wie ein Klavier und ein Keyboard.
-        </p>
-        <p className="py-2">
-          Im Haus haben Sie außerdem die Möglichkeit, Tischtennisplatten und
-          einen Kicker für Ihre Freizeitgestaltung zu verwenden. Eine Sporthalle
-          (nach Voranmeldung) sowie andere Einrichtungen (Hallenbad, Kino,
-          Museen) können in der unmittelbaren Nähe besucht und genutzt werden.
-        </p>
-      </section>
-    </div>
+    <section id="tagen">
+      <h1 className="font-semibold text-2xl mb-2 mt-4">Tagen und Erholen</h1>
+      <p className="py-2">
+        Neben den Wassersportaktivitäten bietet sich unser Haus - vor allem auch
+        in den Wintermonaten - besonders für Tagungs- und Seminargruppen,
+        Chorfreizeiten und Jugendfreizeiten an.
+      </p>
+      <p className="py-2">
+        In unserem Haus besteht ein umfassendes Raumangebot. So haben unsere
+        Gäste die Möglichkeit, verschieden große Seminarräume (25–100 qm),
+        Aufenthaltsräume und eine hausinterne Hafenkneipe, die direkt am See
+        liegt, zu nutzen.
+      </p>
+      <p className="py-2">
+        Zudem stellen wir Ihnen gerne eine umfassende mediale Ausstattung
+        (Beamer, TV, DVD, Video, Audiogeräte, Leinwände, Pinnwände und
+        Flipcharts) zur Verfügung, ebenso wie ein Klavier und ein Keyboard.
+      </p>
+      <p className="py-2">
+        Im Haus haben Sie außerdem die Möglichkeit, Tischtennisplatten und einen
+        Kicker für Ihre Freizeitgestaltung zu verwenden. Eine Sporthalle (nach
+        Voranmeldung) sowie andere Einrichtungen (Hallenbad, Kino, Museen)
+        können in der unmittelbaren Nähe besucht und genutzt werden.
+      </p>
+    </section>
   );
 };
 

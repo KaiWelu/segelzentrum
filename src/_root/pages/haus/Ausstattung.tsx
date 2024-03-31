@@ -1,3 +1,13 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
 const Ausstattung = () => {
   return (
     <div className="content-wrapper">
@@ -38,6 +48,47 @@ const Ausstattung = () => {
           eine große Seeterrasse mit eigenem Aufgang und ein direkter Zugang zum
           See sorgen für eine einmalige Lage und Atmosphäre.
         </p>
+        <div className="py-4">
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 7000,
+              disableOnInteraction: true,
+            }}
+            // pagination={{
+            //   clickable: true,
+            // }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="normalSwiper shadow-md shadow-slate-300"
+          >
+            <SwiperSlide>
+              <img
+                src="/public/assets/images/hero-carousel/cvjm_impression_1.jpg"
+                alt="sailing"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/public/assets/images/hero-carousel/cvjm_impression_2.jpg"
+                alt="sailing"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/public/assets/images/hero-carousel/cvjm_impression_2.jpg"
+                alt="sailing"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/public/assets/images/hero-carousel/cvjm_impression_2.jpg"
+                alt="sailing"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </section>
     </div>
   );
