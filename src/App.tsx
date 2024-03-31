@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import RootLayout from "./_root/pages/RootLayout";
 import Home from "./_root/pages/Home";
-import Haus from "./_root/pages/Haus";
 import Wassersport from "./_root/pages/Wassersport";
 import Umgebung from "./_root/pages/Umgebung";
 import Buchung from "./_root/pages/Buchung";
@@ -15,6 +14,7 @@ import Verein from "./_root/pages/Verein";
 import Partner from "./_root/pages/Partner";
 import NotFound from "./_root/pages/NotFound";
 import UberUns from "./_root/pages/haus/UberUns";
+import Ausstattung from "./_root/pages/haus/Ausstattung";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +23,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         {/* "haus" menu routes */}
         <Route path="haus/uberuns" element={<UberUns />} />
+        <Route path="haus/ausstattung" element={<Ausstattung />} />
 
         <Route path="wassersport" element={<Wassersport />} />
         <Route path="umgebung" element={<Umgebung />} />

@@ -10,10 +10,10 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const UberUns = () => {
   return (
-    <div className="mx-auto max-w-screen-xl mt-5 p-4">
-      <section id="uberuns">
-        <h1 className="font-semibold text-2xl mb-2 ">Über uns</h1>
-        <p className="py-2 text-lg font-light">
+    <div className="content-wrapper">
+      <section className="content-section">
+        <h1>Über uns</h1>
+        <p>
           Ende der sechziger Jahre wurde das heutige CVJM Freizeit- und
           Segelzentrum zusammen mit der Ruderakademie in Ratzeburg gebaut. Das
           Segelzentrum liegt auf der Dominsel direkt am schönen Ratzeburger See.
@@ -23,7 +23,7 @@ const UberUns = () => {
           Das Haus ist Mitglied im CVJM Brückenschlag Nord-Ost, im Deutschen
           Seglerverband (DSV) und im Verband Deutscher Sportbootschulen (VDS).
         </p>
-        <p className="py-2">
+        <p>
           Das CVJM Freizeit- und Segelzentrum in Ratzeburg ist eine Einrichtung
           für Kinder, Jugendliche, junge Erwachsene und Menschen mit
           Behinderungen, die Alternativen zu den üblichen kommerziellen
@@ -41,7 +41,7 @@ const UberUns = () => {
           Bereichen politische, ökologische, musikalische und kulturelle
           Jugendbildung dar.
         </p>
-        <p className="py-2">
+        <p>
           Unsere Programme beinhalten eine pädagogische, therapeutische, aber
           auch sportliche Komponente. Der Segelsport dient bei unseren
           Programmen dazu, Menschen in vorgegebenen Situationen, manchmal auch
@@ -51,14 +51,14 @@ const UberUns = () => {
           nutzen wir die vielfältigen Möglichkeiten der sportlichen Aktivität
           auf dem Wasser.
         </p>
-        <p className="py-2">
+        <p>
           Das CVJM Freizeit- und Segelzentrum bietet sein Programm im Rahmen
           einer umfassenden Betreuung an und ist ausschließlich gemeinnützig
           tätig. Zudem arbeitet es sehr eng mit dem Förderverein „Segeln im
           CVJM“ e.V. zusammen und fördert über diesen in einem hohen Maße das
           Ehrenamt.
         </p>
-        <div className="py-2">
+        <div className="py-4">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -66,12 +66,12 @@ const UberUns = () => {
               delay: 7000,
               disableOnInteraction: true,
             }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={false}
+            // pagination={{
+            //   clickable: true,
+            // }}
+            navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="heroSwiper"
+            className="normalSwiper shadow-md shadow-slate-300"
           >
             <SwiperSlide>
               <img

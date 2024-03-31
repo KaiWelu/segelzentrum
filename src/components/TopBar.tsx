@@ -32,6 +32,7 @@ const TopBar = () => {
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
+  // find out the proper type for the event
   function subMenuHandler(event: any) {
     if (event.target.id === "haus") {
       setIsHausMenuShown(!isHausMenuShown);
@@ -254,38 +255,6 @@ const TopBar = () => {
         </div>
       </nav>
       {isHausMenuShown && <SubMenu menuItems={hausMenuItems} />}
-      {/* {isHausMenuShown && (
-        <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden md:flex">
-          <nav className="navbar mx-auto max-w-screen-lg">
-            <div className="w-full flex flex-row gap-4">
-              <Link to="haus/uberuns">
-                <button className="nav-button_submenu">Über uns</button>
-              </Link>
-              <Link to="haus#ausstattung">
-                <button className="nav-button_submenu">Ausstattung</button>
-              </Link>
-              <Link to="haus#tagen">
-                <button className="nav-button_submenu">Tagungen</button>
-              </Link>
-              <Link to="wassersport">
-                <button className="nav-button_submenu">Gallerie</button>
-              </Link>
-              <Link to="wassersport">
-                <button className="nav-button_submenu">Webcam</button>
-              </Link>
-              <Link to="wassersport">
-                <button className="nav-button_submenu">Kontakt</button>
-              </Link>
-              <Link to="wassersport">
-                <button className="nav-button_submenu">Anfahrt</button>
-              </Link>
-              <Link to="wassersport">
-                <button className="nav-button_submenu">Stellenangebote</button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      )} */}
     </div>
   );
 };

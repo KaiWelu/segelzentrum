@@ -6,7 +6,6 @@ type SubMenuProps = {
 };
 
 const SubMenu = ({ menuItems }: SubMenuProps) => {
-  console.log(menuItems);
   return (
     <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden md:flex">
       <nav className="navbar mx-auto max-w-screen-lg">
