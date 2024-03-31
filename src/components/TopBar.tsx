@@ -1,7 +1,34 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SubMenu from "./ui/SubMenu";
 
 const TopBar = () => {
+  // static data for the submenu
+  const hausMenuItems = [
+    {
+      name: "Über uns",
+      path: "haus/uberuns",
+    },
+    {
+      name: "Ausstattung",
+      path: "haus/ausstattung",
+    },
+    {
+      name: "Tagungen",
+      path: "haus/tagungen",
+    },
+    {
+      name: "Anfahrt",
+      path: "haus/anfahrt",
+    },
+    {
+      name: "Webcam",
+      path: "haus/webcam",
+    },
+    { name: "Stellenangebote", path: "haus/stellenangebote" },
+  ];
+
+  // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
@@ -226,7 +253,8 @@ const TopBar = () => {
           </div>
         </div>
       </nav>
-      {isHausMenuShown && (
+      {isHausMenuShown && <SubMenu menuItems={hausMenuItems} />}
+      {/* {isHausMenuShown && (
         <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden md:flex">
           <nav className="navbar mx-auto max-w-screen-lg">
             <div className="w-full flex flex-row gap-4">
@@ -257,7 +285,7 @@ const TopBar = () => {
             </div>
           </nav>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

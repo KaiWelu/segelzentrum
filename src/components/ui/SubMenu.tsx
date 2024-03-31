@@ -6,13 +6,16 @@ type SubMenuProps = {
 };
 
 const SubMenu = ({ menuItems }: SubMenuProps) => {
+  console.log(menuItems);
   return (
     <div className="bg-primary-2 text-white h-16 w-full shadow-sm shadow-slate-300 hidden md:flex">
       <nav className="navbar mx-auto max-w-screen-lg">
         <div className="w-full flex flex-row gap-4">
-          <Link to="haus/uberuns">
-            <button className="nav-button_submenu">Über uns</button>
-          </Link>
+          {menuItems.map((item: MenuItem, index) => (
+            <Link to={item.path} key={index}>
+              <button className="nav-button_submenu">{item.name}</button>
+            </Link>
+          ))}
         </div>
       </nav>
     </div>
