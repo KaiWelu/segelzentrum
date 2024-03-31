@@ -21,6 +21,7 @@ const TopBar = () => {
       name: "Anfahrt",
       path: "haus/anfahrt",
     },
+    { name: "Kontakt", path: "haus/kontakt" },
     {
       name: "Webcam",
       path: "haus/webcam",
@@ -30,7 +31,6 @@ const TopBar = () => {
 
   // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
-  const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
   // find out the proper type for the event
   function subMenuHandler(event: any) {
@@ -39,6 +39,8 @@ const TopBar = () => {
     }
   }
 
+  // state and handlers for the mobile menu
+  const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   function mobileMenuHandler() {
     setIsMobileMenuShown(!isMobileMenuShown);
   }
