@@ -27,7 +27,7 @@
   }
 
   .content-wrapper {
-    @apply mx-auto max-w-screen-xl mt-5 p-4;
+    @apply mx-auto max-w-screen-xl mt-5 p-4 min-h-lvh;
   }
   .content-section > p {
     @apply py-2 text-lg font-light;
