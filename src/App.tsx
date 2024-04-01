@@ -17,6 +17,7 @@ import Ausstattung from "./_root/pages/haus/Ausstattung";
 import Tagungen from "./_root/pages/haus/Tagungen";
 import Anfahrt from "./_root/pages/haus/Anfahrt";
 import Kontakt from "./_root/pages/haus/Kontakt";
+import Webcam from "./_root/pages/haus/Webcam";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
         <Route path="haus/tagungen" element={<Tagungen />} />
         <Route path="haus/anfahrt" element={<Anfahrt />} />
         <Route path="haus/kontakt" element={<Kontakt />} />
+        <Route path="haus/webcam" element={<Webcam />} />
 
         <Route path="wassersport" element={<Wassersport />} />
         <Route path="umgebung" element={<Umgebung />} />
