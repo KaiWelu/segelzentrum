@@ -39,10 +39,9 @@ const router = createBrowserRouter(
         <Route path="buchung" element={<Buchung />} />
         <Route path="verein" element={<Verein />} />
         <Route path="partner" element={<Partner />} />
+        <Route path="*" element={<NotFound />} />
+        {/* this is the catch all 404 page */}
       </Route>
-
-      {/* this is the catch all 404 page */}
-      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
