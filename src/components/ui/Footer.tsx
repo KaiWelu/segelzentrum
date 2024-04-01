@@ -22,7 +22,7 @@ const Footer = () => {
           <p className="font-semibold">Impressum - Datenschutz</p>
           <p>
             Icons by
-            <a href="/" target="_blank">
+            <a href="https://icons8.de/" target="_blank">
               {" "}
               icons8.de
             </a>
