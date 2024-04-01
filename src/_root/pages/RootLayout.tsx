@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import TopBar from "../../components/TopBar";
 import ScrollToHashElement from "../../components/util/ScrollToHashElement";
+import Footer from "../../components/ui/Footer";
 
 const RootLayout = () => {
   return (
@@ -12,9 +13,7 @@ const RootLayout = () => {
       <main>
         <Outlet />
       </main>
-      <footer>
-        <p>Icons by Icon 8</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
