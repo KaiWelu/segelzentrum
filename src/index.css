@@ -25,6 +25,17 @@
   .nav-button_submenu {
     @apply font-light text-base text-white hover:text-lg;
   }
+
+  .content-wrapper {
+    @apply mx-auto max-w-screen-xl mt-5 p-4;
+  }
+  .content-section > p {
+    @apply py-2 text-lg font-light;
+  }
+
+  .content-section > h1 {
+    @apply font-semibold text-3xl mb-2;
+  }
 }
 
 /* styles for the home page hero carousel */
@@ -37,6 +48,16 @@
   --swiper-pagination-color: white;
   --swiper-pagination-bottom: 10px;
   --swiper-pagination-bullet-size: 12px;
+  /* this is for the side navigation */
+  --swiper-navigation-color: white;
+  --swiper-navigation-top-offset: 50%;
+}
+
+.normalSwiper {
+  /* this is for the bullets */
+  --swiper-pagination-color: white;
+  --swiper-pagination-bottom: 10px;
+  --swiper-pagination-bullet-size: 5px;
   /* this is for the side navigation */
   --swiper-navigation-color: white;
   --swiper-navigation-top-offset: 50%;
