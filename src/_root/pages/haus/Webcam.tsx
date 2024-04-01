@@ -36,7 +36,10 @@ const Webcam = () => {
     <div className="content-wrapper">
       <section className="content-section">
         <h1>Webcam</h1>
-        <div></div>
+        <p>
+          Hier gibt es erst was zu sehen wenn ich auf die Webcam Zugriff bekomme
+          haha
+        </p>
       </section>
     </div>
   );
