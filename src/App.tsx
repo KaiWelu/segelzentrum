@@ -20,6 +20,10 @@ import Webcam from "./_root/pages/haus/Webcam";
 import Stellenangebote from "./_root/pages/haus/Stellenangebote";
 import VereinUberUns from "./_root/pages/verein/VereinUberUns";
 import VereinKontakt from "./_root/pages/verein/VereinKontakt";
+import Ratzeburg from "./_root/pages/umgebung/Ratzeburg";
+import Umland from "./_root/pages/umgebung/Umland";
+import Lubeck from "./_root/pages/umgebung/Lubeck";
+import UmgebungLinks from "./_root/pages/umgebung/UmgebungLinks";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +38,12 @@ const router = createBrowserRouter(
         <Route path="haus/kontakt" element={<Kontakt />} />
         <Route path="haus/webcam" element={<Webcam />} />
         <Route path="haus/stellenangebote" element={<Stellenangebote />} />
+
+        {/* "umgebung" menu routes */}
+        <Route path="umgebung/ratzeburg" element={<Ratzeburg />} />
+        <Route path="umgebung/umland" element={<Umland />} />
+        <Route path="umgebung/lubeck" element={<Lubeck />} />
+        <Route path="umgebung/links" element={<UmgebungLinks />} />
 
         {/* "verein" menu routes */}
         <Route path="verein/uberuns" element={<VereinUberUns />} />
