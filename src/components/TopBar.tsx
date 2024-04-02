@@ -1,34 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./ui/SubMenu";
+// imports static lists for the menu items
+import { HAUS_MENU_ITEMS } from "../lib/menuItems";
 
 const TopBar = () => {
-  // static data for the submenu
-  const hausMenuItems = [
-    {
-      name: "Über uns",
-      path: "haus/uberuns",
-    },
-    {
-      name: "Ausstattung",
-      path: "haus/ausstattung",
-    },
-    {
-      name: "Tagungen",
-      path: "haus/tagungen",
-    },
-    {
-      name: "Anfahrt",
-      path: "haus/anfahrt",
-    },
-    { name: "Kontakt", path: "haus/kontakt" },
-    {
-      name: "Webcam",
-      path: "haus/webcam",
-    },
-    { name: "Stellenangebote", path: "haus/stellenangebote" },
-  ];
-
   // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
 
@@ -256,7 +232,7 @@ const TopBar = () => {
           </div>
         </div>
       </nav>
-      {isHausMenuShown && <SubMenu menuItems={hausMenuItems} />}
+      {isHausMenuShown && <SubMenu menuItems={HAUS_MENU_ITEMS} />}
     </div>
   );
 };
