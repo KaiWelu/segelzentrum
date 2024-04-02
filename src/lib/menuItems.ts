@@ -35,3 +35,10 @@ export const VEREIN_MENU_ITEMS = [
     path: "verein/kontakt",
   },
 ];
+
+export const UMGEBUNG_MENU_ITEMS = [
+  { name: "Ratzeburg", path: "umgebung/ratzeburg" },
+  { name: "Umland", path: "umgebung/umland" },
+  { name: "Lübeck", path: "umgebung/lubeck" },
+  { name: "Links", path: "umgebung/links" },
+];
