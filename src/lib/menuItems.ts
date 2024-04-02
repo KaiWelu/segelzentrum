@@ -24,3 +24,14 @@ export const HAUS_MENU_ITEMS = [
   },
   { name: "Stellenangebote", path: "haus/stellenangebote" },
 ];
+
+export const VEREIN_MENU_ITEMS = [
+  {
+    name: "Über uns",
+    path: "verein/uberuns",
+  },
+  {
+    name: "Kontakt",
+    path: "verein/kontakt",
+  },
+];

@@ -2,16 +2,31 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./ui/SubMenu";
 // imports static lists for the menu items
-import { HAUS_MENU_ITEMS } from "../lib/menuItems";
+import { HAUS_MENU_ITEMS, VEREIN_MENU_ITEMS } from "../lib/menuItems";
 
 const TopBar = () => {
   // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
+  const [isVereinMenuShown, setIsVereinMenuShown] = useState(false);
+
+  // util function to close all submenus
+
+  function closeSubMenus() {
+    setIsHausMenuShown(false);
+    setIsVereinMenuShown(false);
+  }
 
   // find out the proper type for the event
   function subMenuHandler(event: any) {
+    // close all menus
+    closeSubMenus();
+
     if (event.target.id === "haus") {
       setIsHausMenuShown(!isHausMenuShown);
+    }
+
+    if (event.target.id === "verein") {
+      setIsVereinMenuShown(!isVereinMenuShown);
     }
   }
 
@@ -233,6 +248,7 @@ const TopBar = () => {
         </div>
       </nav>
       {isHausMenuShown && <SubMenu menuItems={HAUS_MENU_ITEMS} />}
+      {isVereinMenuShown && <SubMenu menuItems={VEREIN_MENU_ITEMS} />}
     </div>
   );
 };

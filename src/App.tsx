@@ -9,7 +9,6 @@ import Home from "./_root/pages/Home";
 import Wassersport from "./_root/pages/Wassersport";
 import Umgebung from "./_root/pages/Umgebung";
 import Buchung from "./_root/pages/Buchung";
-import Verein from "./_root/pages/Verein";
 import Partner from "./_root/pages/Partner";
 import NotFound from "./_root/pages/NotFound";
 import UberUns from "./_root/pages/haus/UberUns";
@@ -19,6 +18,8 @@ import Anfahrt from "./_root/pages/haus/Anfahrt";
 import Kontakt from "./_root/pages/haus/Kontakt";
 import Webcam from "./_root/pages/haus/Webcam";
 import Stellenangebote from "./_root/pages/haus/Stellenangebote";
+import VereinUberUns from "./_root/pages/verein/VereinUberUns";
+import VereinKontakt from "./_root/pages/verein/VereinKontakt";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,10 +35,13 @@ const router = createBrowserRouter(
         <Route path="haus/webcam" element={<Webcam />} />
         <Route path="haus/stellenangebote" element={<Stellenangebote />} />
 
+        {/* "verein" menu routes */}
+        <Route path="verein/uberuns" element={<VereinUberUns />} />
+        <Route path="verein/kontakt" element={<VereinKontakt />} />
+
         <Route path="wassersport" element={<Wassersport />} />
         <Route path="umgebung" element={<Umgebung />} />
         <Route path="buchung" element={<Buchung />} />
-        <Route path="verein" element={<Verein />} />
         <Route path="partner" element={<Partner />} />
         <Route path="*" element={<NotFound />} />
         {/* this is the catch all 404 page */}
