@@ -1,41 +1,32 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./ui/SubMenu";
+// imports static lists for the menu items
+import { HAUS_MENU_ITEMS, VEREIN_MENU_ITEMS } from "../lib/menuItems";
 
 const TopBar = () => {
-  // static data for the submenu
-  const hausMenuItems = [
-    {
-      name: "Über uns",
-      path: "haus/uberuns",
-    },
-    {
-      name: "Ausstattung",
-      path: "haus/ausstattung",
-    },
-    {
-      name: "Tagungen",
-      path: "haus/tagungen",
-    },
-    {
-      name: "Anfahrt",
-      path: "haus/anfahrt",
-    },
-    { name: "Kontakt", path: "haus/kontakt" },
-    {
-      name: "Webcam",
-      path: "haus/webcam",
-    },
-    { name: "Stellenangebote", path: "haus/stellenangebote" },
-  ];
-
   // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
+  const [isVereinMenuShown, setIsVereinMenuShown] = useState(false);
+
+  // util function to close all submenus
+
+  function closeSubMenus() {
+    setIsHausMenuShown(false);
+    setIsVereinMenuShown(false);
+  }
 
   // find out the proper type for the event
   function subMenuHandler(event: any) {
+    // close all menus
+    closeSubMenus();
+
     if (event.target.id === "haus") {
       setIsHausMenuShown(!isHausMenuShown);
+    }
+
+    if (event.target.id === "verein") {
+      setIsVereinMenuShown(!isVereinMenuShown);
     }
   }
 
@@ -256,7 +247,8 @@ const TopBar = () => {
           </div>
         </div>
       </nav>
-      {isHausMenuShown && <SubMenu menuItems={hausMenuItems} />}
+      {isHausMenuShown && <SubMenu menuItems={HAUS_MENU_ITEMS} />}
+      {isVereinMenuShown && <SubMenu menuItems={VEREIN_MENU_ITEMS} />}
     </div>
   );
 };
