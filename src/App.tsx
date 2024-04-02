@@ -8,7 +8,6 @@ import RootLayout from "./_root/pages/RootLayout";
 import Home from "./_root/pages/Home";
 import Wassersport from "./_root/pages/Wassersport";
 import Umgebung from "./_root/pages/Umgebung";
-import Buchung from "./_root/pages/Buchung";
 import Partner from "./_root/pages/Partner";
 import NotFound from "./_root/pages/NotFound";
 import UberUns from "./_root/pages/haus/UberUns";
