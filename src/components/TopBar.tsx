@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SubMenu from "./ui/SubMenu";
 // imports static lists for the menu items
 import {
+  BUCHEN_MENU_ITEMS,
   HAUS_MENU_ITEMS,
   UMGEBUNG_MENU_ITEMS,
   VEREIN_MENU_ITEMS,
@@ -12,6 +13,7 @@ const TopBar = () => {
   // submenu states and functionality
   const [isHausMenuShown, setIsHausMenuShown] = useState(false);
   const [isUmgebungMenuShown, setIsUmgebungMenuShown] = useState(false);
+  const [isBuchenMenuShown, setIsBuchenMenuShown] = useState(false);
   const [isVereinMenuShown, setIsVereinMenuShown] = useState(false);
 
   // util function to close all submenus
@@ -19,6 +21,7 @@ const TopBar = () => {
   function closeSubMenus() {
     setIsHausMenuShown(false);
     setIsUmgebungMenuShown(false);
+    setIsBuchenMenuShown(false);
     setIsVereinMenuShown(false);
   }
 
@@ -33,6 +36,10 @@ const TopBar = () => {
 
     if (event.target.id === "umgebung") {
       setIsUmgebungMenuShown(!isUmgebungMenuShown);
+    }
+
+    if (event.target.id === "buchen") {
+      setIsBuchenMenuShown(!isBuchenMenuShown);
     }
 
     if (event.target.id === "verein") {
@@ -259,6 +266,7 @@ const TopBar = () => {
       </nav>
       {isHausMenuShown && <SubMenu menuItems={HAUS_MENU_ITEMS} />}
       {isUmgebungMenuShown && <SubMenu menuItems={UMGEBUNG_MENU_ITEMS} />}
+      {isBuchenMenuShown && <SubMenu menuItems={BUCHEN_MENU_ITEMS} />}
       {isVereinMenuShown && <SubMenu menuItems={VEREIN_MENU_ITEMS} />}
     </div>
   );

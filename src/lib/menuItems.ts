@@ -42,3 +42,8 @@ export const UMGEBUNG_MENU_ITEMS = [
   { name: "Lübeck", path: "umgebung/lubeck" },
   { name: "Links", path: "umgebung/links" },
 ];
+
+export const BUCHEN_MENU_ITEMS = [
+  { name: "Preise", path: "buchen/preise" },
+  { name: "Belegungskalender", path: "buchen/belegungskalender" },
+];

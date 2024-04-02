@@ -24,6 +24,8 @@ import Ratzeburg from "./_root/pages/umgebung/Ratzeburg";
 import Umland from "./_root/pages/umgebung/Umland";
 import Lubeck from "./_root/pages/umgebung/Lubeck";
 import UmgebungLinks from "./_root/pages/umgebung/UmgebungLinks";
+import Preise from "./_root/pages/buchen/Preise";
+import Belegung from "./_root/pages/buchen/Belegung";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +46,10 @@ const router = createBrowserRouter(
         <Route path="umgebung/umland" element={<Umland />} />
         <Route path="umgebung/lubeck" element={<Lubeck />} />
         <Route path="umgebung/links" element={<UmgebungLinks />} />
+
+        {/* "buchen" menu routes */}
+        <Route path="buchen/preise" element={<Preise />} />
+        <Route path="buchen/belegungskalender" element={<Belegung />} />
 
         {/* "verein" menu routes */}
         <Route path="verein/uberuns" element={<VereinUberUns />} />
